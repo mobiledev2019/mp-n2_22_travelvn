@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:id="@+id/relative_image_travel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/cate_bien" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:width="230dp"
+                android:text="Tên"
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textColorHighlight="#009688" />
+
+            <TextView
+                android:id="@+id/txtFeature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/txtName"
+                android:layout_alignEnd="@id/txtName"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:layout_below="@id/txtName"
+                android:text="Hà Nội là thủ đô của nước Cộng hòa xã hội chủ nghĩa Việt Nam, cũng là kinh đô của hầu hết các vương triều phong kiến tại Việt Nam trước đây. Do đó, lịch sử Hà Nội gắn liền với sự thăng trầm của lịch sử Việt Nam qua các thời kỳ.[5] Hà Nội là thành phố trực thuộc trung ương có diện tích lớn nhất cả nước từ khi tỉnh Hà Tây"
+                android:textColor="@color/black" />
+
+
+
+
+            <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="0dp"
+                    android:textAlignment="viewStart"
+                    app:srcCompat="@mipmap/ic_map"
+                    android:layout_toLeftOf="@id/txtPlace"/>
+
+                <TextView
+                    android:id="@+id/txtPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:layout_alignEnd="@id/txtName"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Địa điểm" />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

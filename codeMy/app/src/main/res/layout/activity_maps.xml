@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/custom_button"
+            android:text="C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/icon_map_corlor"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="310dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_map_black_24dp"
+            android:backgroundTint="@color/custom_button"
+            map:borderWidth="0dp"
+            map:fabSize="normal"
+            />
+        <include layout="@layout/floating_button_layout"></include>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/bottom_sheet_color"
+            map:layout_behavior="@string/bottom_sheet_behavior"
+            map:behavior_hideable="true"
+            map:behavior_peekHeight="55dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/title_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Xem chi tiết"/>
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageTravel1"
+                android:paddingTop="15dp"
+                android:gravity="center"/>
+
+                <TextView
+                android:id="@+id/discrible_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="15dp"
+                android:gravity="center" />
+
+                <TextView
+                android:id="@+id/image_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Một số ảnh khác"/>
+
+                <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                android:id="@+id/event_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Sự kiện"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</fragment>

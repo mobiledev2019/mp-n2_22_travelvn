@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottomnavigation.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nes_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alwaysDrawnWithCache="false"
+            tools:context=".FragmentHome">
+
+            <!-- TODO: Update blank fragment layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="0dp"
+                    android:alwaysDrawnWithCache="false">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp" />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Danh mục du lịch"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/place_autocomplete_prediction_primary_text"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="#FFFFFF">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="6"
+                        android:orientation="horizontal"
+                        android:rowCount="2">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/listCategories"
+                            android:layout_width="450dp"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </GridLayout>
+                </HorizontalScrollView>
+                <TextView
+                    android:id="@+id/topicEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chủ đề sự kiện"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/place_autocomplete_prediction_primary_text"
+                    />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="1">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/categoryEvent"
+                            android:layout_width="450dp"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </GridLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:alwaysDrawnWithCache="true"
+            android:background="#00FCFCFC"
+            android:keepScreenOn="true"
+            android:visibility="visible"
+            app:itemTextColor="#F44336">
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ECECE5"
+                />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@mipmap/ic_notification" />
+
+                <TextView
+                    android:id="@+id/numberNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/notification"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textColor="#D32F2F" />
+            </RelativeLayout>
+
+        </android.support.design.widget.BottomNavigationView>
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

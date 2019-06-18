@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/custom_button"
+        android:src="@drawable/ic_golf_course_black_24dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/custom_button"
+        android:src="@drawable/ic_directions_bus_black_24dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/custom_button"
+        android:src="@drawable/ic_local_hospital_black_24dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/custom_button"
+        android:src="@drawable/ic_school_black_24dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/custom_button"
+        android:src="@drawable/ic_domain_black_24dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/text_fab_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="11dp"
+        android:text="Du lịch"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <TextView android:id="@+id/text_fab_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xe buýt"
+        android:textSize="15dp"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="11dp" />
+
+    <TextView android:id="@+id/text_fab_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bệnh viện"
+        android:textSize="15dp"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="11dp" />
+
+    <TextView android:id="@+id/text_fab_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trường học"
+        android:textSize="15dp"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="11dp" />
+
+    <TextView
+        android:id="@+id/text_fab_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="11dp"
+        android:text="Chính phủ"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+</FrameLayout>
